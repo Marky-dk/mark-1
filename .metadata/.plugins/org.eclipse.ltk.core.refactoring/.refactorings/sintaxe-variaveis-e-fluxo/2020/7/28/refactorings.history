@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;testeIR&apos; to &apos;TesteIR&apos;&#x0A;- Original project: &apos;sintaxe-variaveis-e-fluxo&apos;&#x0A;- Original element: &apos;testeIR&apos;&#x0A;- Renamed element: &apos;TesteIR&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;testeIR&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{testeIR.java[testeIR" matchStrategy="1" name="TesteIR" qualified="false" references="true" similarDeclarations="false" stamp="1594390595400" textual="false" version="1.0"/>
+</session>

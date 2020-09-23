@@ -32,4 +32,10 @@
     <fullyQualifiedTypeName name="br.com.bytebank.banco.test.arreylist.Teste.NumeroDaContaComparator"/>
     <fullyQualifiedTypeName name="br.com.bytebank.banco.test.arreylist.TitularDaContaComparator"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.Reader"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
 </qualifiedTypeNameHistroy>

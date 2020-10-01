@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="912" key="dialogHeight"/>
-		<item value="1079" key="dialogWidth"/>
+		<item key="dialogHeight" value="912"/>
+		<item key="dialogWidth" value="1079"/>
 		<list key="textEntries">
 			<item value="1"/>
 			<item value="1"/>
@@ -23,7 +23,7 @@
 	<section name="NewWizardAction">
 	</section>
 	<section name="ImportExportAction">
-		<item value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard"/>
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
 			<item value="org.eclipse.jdt.ui.Java"/>
 		</list>

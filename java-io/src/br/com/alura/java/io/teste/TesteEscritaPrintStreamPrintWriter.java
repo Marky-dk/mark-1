@@ -3,7 +3,7 @@ package br.com.alura.java.io.teste;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class TesteEscrita3 {
+public class TesteEscritaPrintStreamPrintWriter {
 
     public static void main(String[] args) throws IOException {
 
@@ -14,7 +14,7 @@ public class TesteEscrita3 {
 //    	FileWriter fw = new FileWriter("AulaJava2.txt");
 //    	BufferedWriter bw = new BufferedWriter(fw);
     	
-    	PrintWriter ps = new PrintWriter("AulaJava2.txt");
+    	PrintWriter ps = new PrintWriter("AulaJava2.txt","UTF-8");
     	
         ps.println("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
         ps.println();

@@ -1,5 +1,7 @@
 package br.com.bytebank.banco.modelo;
 
+import java.io.Serializable;
+
 /**
  * Essa classe é usada para ser uma classe pai para as outras classe de conta, como a classe ContaCorrente.
  * 
@@ -7,7 +9,7 @@ package br.com.bytebank.banco.modelo;
  * @version 1.0
  */
 
-public abstract class Conta implements Comparable<Conta> {
+public abstract class Conta implements Comparable<Conta>,Serializable {
 
 	protected double saldo;
 	private int agencia;

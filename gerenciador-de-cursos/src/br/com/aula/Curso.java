@@ -35,24 +35,29 @@ public class Curso {
 	}
 
 	public int getTempoTotal() {
-		
+
 		int tempoTotal = 0;
 		for (Aula aula : aulas) {
 			tempoTotal += aula.getTempo();
 		}
 		return tempoTotal;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Nome do Curso: " + this.getNome() + "Tempo do Curso: " + this.getTempoTotal() + "Aulas: " + this.aulas;
 	}
-	
-	public void matricula(Aluno aluno){
-	    this.alunos.add(aluno);
+
+	public void matricula(Aluno aluno) {
+		this.alunos.add(aluno);
 	}
-	
+
 	public Set<Aluno> getAlunos() {
-	    return Collections.unmodifiableSet(alunos);
+		return Collections.unmodifiableSet(alunos);
 	}
+
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
+	}
+
 }

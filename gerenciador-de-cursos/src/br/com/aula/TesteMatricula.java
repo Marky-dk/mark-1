@@ -16,7 +16,7 @@ public class TesteMatricula {
 		Aluno a2 = new Aluno("Guilherme Silveira", 5617);
 		Aluno a3 = new Aluno("Mauricio Aniche", 17645);
 
-//		Set<Aluno> alunos = javaColecoes.getAlunos();
+		Set<Aluno> alunos = javaColecoes.getAlunos();
 		
 		javaColecoes.matricula(a1);
 		javaColecoes.matricula(a2);
@@ -26,6 +26,8 @@ public class TesteMatricula {
 			System.out.println(aluno);
 		});
 		
+		Aluno turini = new Aluno("Rodrigo Turini", 34672);
+        System.out.println(a1.equals(turini));
 	}
 
 }

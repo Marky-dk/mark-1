@@ -94,6 +94,9 @@
 		<item key="Comments" value="false"/>
 		<item key="VisibilityModifier" value="1"/>
 		<item key="FinalModifier" value="false"/>
+		<item key="InstanceOf" value="false"/>
+		<item key="Blocks" value="false"/>
+		<item key="Objects.equals &amp; Objects.hash" value="false"/>
 	</section>
 	<section name="RenameInformationPopup">
 	</section>
@@ -145,5 +148,12 @@
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT" value="342"/>
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+	</section>
+	<section name="DialogBounds_GenerateHashCodeEqualsDialog">
+		<item key="DIALOG_X_ORIGIN" value="228"/>
+		<item key="DIALOG_Y_ORIGIN" value="48"/>
+		<item key="DIALOG_WIDTH" value="581"/>
+		<item key="DIALOG_HEIGHT" value="655"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>
 </section>

@@ -1,6 +1,6 @@
- ObjectInputStream ois = new ObjectInputStream(new FileInputStream("cc.bin"));
-        ContaCorrente cc = (ContaCorrente) ois.readObject();
-        ois.close();
+Map<Integer, String> pessoas = new HashMap<>();
 
-        System.out.println(cc.getSaldo());
-        System.out.println(cc.getTitular().getNome());
+        pessoas.put(21, "Leonardo Cordeiro");
+        pessoas.put(27, "Fabio Pimentel");
+        pessoas.put(19, "Silvio Mattos");
+        pessoas.put(23, "Romulo Henrique");

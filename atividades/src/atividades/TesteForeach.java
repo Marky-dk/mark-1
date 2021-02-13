@@ -1,49 +1,43 @@
 package atividades;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class TesteForeach {
 
 	public static void main(String[] args) {
-		
+
 		List<String> palavras = new ArrayList<>();
 		palavras.add("alura online");
 		palavras.add("casa do código");
 		palavras.add("caelum");
-		
-		Consumer<String> consumidor = new Imprime();
-		
-		ComparadorPorTamanho comparador = new ComparadorPorTamanho();
 
-		palavras.sort(comparador);
-		
-		palavras.forEach(consumidor);
+		// antes
+//		palavras.sort(new Comparator<String>() {
+//
+//			@Override
+//			public int compare(String s1, String s2) {
+//				if (s1.length() < s2.length())
+//					return -1;
+//				if (s1.length() > s2.length())
+//					return 1;
+//				return 0;
+//			}
+//		});
+
+		// depois
+		palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+
+		// antes
+//		palavras.forEach(new Consumer<String>(){
+//		    public void accept(String palavra) {
+//		        System.out.println(palavra);
+//		    }
+//		});
+
+		// depois
+		palavras.forEach(s -> System.out.println(s));
 
 	}
 
-}
-
-class ComparadorPorTamanho implements Comparator<String> {
-
-    @Override
-    public int compare(String s1, String s2) {
-        if (s1.length() < s2.length())
-            return -1;
-        if (s1.length() > s2.length())
-            return 1;
-        return 0;
-    }
-}
-
-class Imprime<T> implements Consumer<T>{
-
-	@Override
-	public void accept(T p) {
-		System.out.println(p);
-		
-	}
-	
 }

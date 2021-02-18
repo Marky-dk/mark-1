@@ -1,6 +1,7 @@
 package atividades;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class TesteForeach {
@@ -26,8 +27,11 @@ public class TesteForeach {
 //		});
 
 		// depois
-		palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
-
+		//palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+		//palavras.sort(Comparator.comparing(s -> s.length()));
+		palavras.sort(Comparator.comparing(String::length));
+		//palavras.sort(String.CASE_INSENSITIVE_ORDER);
+		
 		// antes
 //		palavras.forEach(new Consumer<String>(){
 //		    public void accept(String palavra) {
@@ -36,7 +40,8 @@ public class TesteForeach {
 //		});
 
 		// depois
-		palavras.forEach(s -> System.out.println(s));
+		//palavras.forEach(s -> System.out.println(s));
+		palavras.forEach(System.out::println);
 
 	}
 

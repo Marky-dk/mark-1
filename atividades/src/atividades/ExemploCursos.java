@@ -3,7 +3,8 @@ package atividades;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.OptionalDouble;
+import java.util.stream.Collectors;
 
 class Curso {
 	private String nome;
@@ -34,8 +35,18 @@ public class ExemploCursos {
 
 		cursos.sort(Comparator.comparing(c -> c.getAlunos()));
 
-		cursos.stream().filter(c -> c.getAlunos() > 50).forEach(c -> System.out.println(c.getNome()));
-	
+		OptionalDouble media = cursos.stream()
+			.mapToInt(c -> c.getAlunos())
+			.average();
+		
+		System.out.println(media);
+		
+		List<Curso> cursosFiltrados = cursos.stream()
+				   .filter(c -> c.getAlunos() > 50)
+				   .collect(Collectors.toList());
+		
+		
+		
 		//Stream<String> nomes = cursos.stream().map(Curso::getNome);
 		
 	}

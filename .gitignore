@@ -1,4 +1,6 @@
 teste.txt
-
+/.metadata/
+*.metadata/
+/*.metadata/
 *.metadata
 /.recommenders/

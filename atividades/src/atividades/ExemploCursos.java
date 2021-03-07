@@ -46,7 +46,6 @@ public class ExemploCursos {
 				   .collect(Collectors.toList());
 		
 		
-		
 		//Stream<String> nomes = cursos.stream().map(Curso::getNome);
 		
 	}
